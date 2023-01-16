@@ -50,13 +50,14 @@ const TopScorerList: React.FC = () => {
    */
   const { loading: isLoading, error, data } = useQuery(GET_USERS);
   if (isLoading) return <h2>loading.</h2>;
+  console.log('data', data);
 
   if (error) {
     return (
       <h3 className="error">{error?.message || 'Something went wrong'}</h3>
     );
   }
-
+  console.log(data);
   const playersCopy = data.users.slice();
 
   const sortedPlayers = playersCopy.sort(

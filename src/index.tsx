@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloProvider } from '@apollo/client';
 import App from './App';
+import { client } from './graphql/client';
 
 /**
  * ApolloClient is fully featured caching graphQl client for javacript
@@ -11,11 +12,6 @@ import App from './App';
  * @property {string} url- The graphql endpoint to connect
  * @type {InMemoryCache} - caching mechanism provided by GraphQl
  */
-
-const client = new ApolloClient({
-  uri: process.env.REACT_APP_BASE_URI,
-  cache: new InMemoryCache()
-});
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
