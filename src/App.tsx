@@ -11,6 +11,10 @@ const queryClient = new QueryClient();
 
 const App: React.FC = (): ReactElement => {
   return (
+    /**
+     * QueryClientProvider-> it is a component that provides queryClient to its children
+     * @param(React.ReactNode)-> the children of the component
+     */
     <QueryClientProvider client={queryClient}>
       <Layout>
         <Routes>
