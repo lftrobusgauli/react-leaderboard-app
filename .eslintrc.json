@@ -3,12 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "airbnb"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -18,10 +13,14 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "quotes": ["error", "single"],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "comma-dangle": "off",
+    "import/no-extraneous-dependencies": "off",
     "no-unused-vars": [
       "error",
       { "vars": "local", "args": "none", "ignoreRestSiblings": true }
     ],
+    "no-undef": "off",
     "prefer-const": [
       "error",
       {
