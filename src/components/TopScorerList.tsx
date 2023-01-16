@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Table from '@mui/material/Table';
 import Paper from '@mui/material/Paper';
 import { useQuery } from '@apollo/client';
@@ -35,7 +35,7 @@ interface IUser {
  * @returns {jsx} -> A div element with some content
  */
 
-const TopScorerList: React.FC = () => {
+const TopScorerList: React.FC = (): ReactElement => {
   const classes = useStyles();
 
   /**

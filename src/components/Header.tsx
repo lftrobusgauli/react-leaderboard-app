@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 
-const Header = () => {
+const Header = (): ReactElement => {
   return (
     <nav className="header">
       <h3>Score Leaderboard</h3>

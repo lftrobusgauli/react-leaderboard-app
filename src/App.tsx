@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -9,7 +9,7 @@ import { Layout } from './components/Layout';
 
 const queryClient = new QueryClient();
 
-const App: React.FC = () => {
+const App: React.FC = (): ReactElement => {
   return (
     <QueryClientProvider client={queryClient}>
       <Layout>
