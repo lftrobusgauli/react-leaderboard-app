@@ -5,17 +5,21 @@ A simple React application that displays a list of top players with highest scor
 
 # Getting Started
 
-# Prerequisite
+## Prerequisites
 
-- Docker setup
+- Docker
+- react-native-cli
 
-# Server setup:
+## Server Setup:
 
-- git clone `https://github.com/samya-ak/the-game`
-- run `docker-compose build && docker-compose up`
+```shell
+git clone `https://github.com/samya-ak/the-game`
+run `docker-compose build && docker-compose up`
+```
+
+## Client Setup:
 
 These instruction will get you a copy of the project up and running on your local machine for development and testing purpose.
-once the server is running run the below commands:
 
 - `npm start`
 - `npm run test`
