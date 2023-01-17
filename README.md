@@ -31,7 +31,7 @@ docker build -t game_app .
 docker run -it --name game-app -p 3000:3000 game_app
 ```
 
-3. Once running container it can be accessed in url `https://localhost:3000`
+3. Once docker container is u, it can be accessed in url `https://localhost:3000`
 
 ## Client Setup:
 
