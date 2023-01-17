@@ -1,20 +1,22 @@
 import React, { ReactElement } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 import './App.css';
-import { NotFoundPage, TopScorerList } from './components';
-import { Layout } from './components/Layout';
 
-const queryClient = new QueryClient();
+import { Layout } from './components/Layout';
+import { NotFoundPage, TopScorerList } from './components';
+
+/**
+ * QueryClientProvider is a component that provides queryClient to its children
+ * @param {React.ReactNode} - the children of the component
+ * @return {jsx} - A div element
+ */
 
 const App: React.FC = (): ReactElement => {
+  const queryClient = new QueryClient();
+
   return (
-    /**
-     * QueryClientProvider-> it is a component that provides queryClient to its children
-     * @param(React.ReactNode)-> the children of the component
-     */
     <QueryClientProvider client={queryClient}>
       <Layout>
         <Routes>

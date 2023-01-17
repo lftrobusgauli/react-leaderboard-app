@@ -1,7 +1,7 @@
 # Game App
 
 A simple React application that displays a list of top players with highest scores
-[Screen-Shot-2023-01-16-at-12-47-32.png](https://postimg.cc/HjYqSvqT)
+![image info](./src/assets/app_screenshot.png)
 
 # Getting Started
 

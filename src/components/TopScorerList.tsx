@@ -1,7 +1,9 @@
 import React, { ReactElement } from 'react';
+import { Box } from '@mui/system';
 import Table from '@mui/material/Table';
 import Paper from '@mui/material/Paper';
 import { useQuery } from '@apollo/client';
+import { TableCell } from '@mui/material';
 import TableRow from '@mui/material/TableRow';
 import TableBody from '@mui/material/TableBody';
 import TableHead from '@mui/material/TableHead';
@@ -9,8 +11,6 @@ import TableContainer from '@mui/material/TableContainer';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { Box } from '@mui/system';
-import { TableCell } from '@mui/material';
 import GET_USERS from '../graphql/queries/getUsers';
 
 const useStyles = makeStyles({
@@ -31,8 +31,8 @@ interface IUser {
 }
 
 /**
- * TopScorerList-> React component that list out top ten players with high score
- * @returns {jsx} -> A div element with some content
+ * TopScorerList is a React component that list out top ten players with high score
+ * @returns {jsx} - A div element with some content
  */
 
 const TopScorerList: React.FC = (): ReactElement => {
@@ -49,8 +49,8 @@ const TopScorerList: React.FC = (): ReactElement => {
    *  - data: data returned by query
    */
   const { loading: isLoading, error, data } = useQuery(GET_USERS);
+
   if (isLoading) return <h2>loading.</h2>;
-  console.log('data', data);
 
   if (error) {
     return (
