@@ -17,6 +17,22 @@ git clone `https://github.com/samya-ak/the-game`
 run `docker-compose build && docker-compose up`
 ```
 
+## Build and run Docker image
+
+1. Build docker image
+
+```shell
+docker build -t game_app .
+```
+
+2. Run the container
+
+```shell
+docker run -it --name game-app -p 3000:3000 game_app
+```
+
+3. Once running container it can be accessed in url `https://localhost:3000`
+
 ## Client Setup:
 
 These instruction will get you a copy of the project up and running on your local machine for development and testing purpose.
