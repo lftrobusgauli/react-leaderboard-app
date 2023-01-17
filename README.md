@@ -21,6 +21,8 @@ run `docker-compose build && docker-compose up`
 
 These instruction will get you a copy of the project up and running on your local machine for development and testing purpose.
 
+- `git clone https://github.com/sabinss/game-client`
+- `npm install or yarn install`
 - `npm start`
 - `npm run test`
 
