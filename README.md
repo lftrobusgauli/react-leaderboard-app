@@ -8,6 +8,7 @@ A simple React application that displays a list of top players with highest scor
 These instruction will get you a copy of the project up and running on your local machine for development and testing purpose.
 
 - `npm start`
+- `npm run test`
 
 ### Prerequisites
 
