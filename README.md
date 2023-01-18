@@ -9,6 +9,8 @@ A simple React application that displays a list of top players with highest scor
 
 - Docker
 - react-native-cli
+- Node.js
+- npm (or yarn)
 
 ## Server Setup:
 
@@ -42,11 +44,6 @@ These instruction will get you a copy of the project up and running on your loca
 - `npm start`
 - `npm run test`
 
-### Prerequisites
-
-- Node.js
-- npm (or yarn)
-
 ## Built With
 
 - [React](https://reactjs.org/) - The JavaScript library used for building user interfaces
@@ -57,5 +54,3 @@ These instruction will get you a copy of the project up and running on your loca
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-.
