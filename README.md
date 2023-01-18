@@ -15,7 +15,7 @@ A simple React application that displays a list of top players with highest scor
 ## Server Setup:
 
 ```shell
-git clone https://github.com/samya-ak/the-game
+git clone https://github.com/lftrobusgauli/gin-gql-api.gitv
 run docker-compose build && docker-compose up
 ```
 
@@ -39,7 +39,7 @@ docker run -it --name game-app -p 3000:3000 game_app
 
 These instruction will get you a copy of the project up and running on your local machine for development and testing purpose.
 
-- git clone https://github.com/sabinss/game-client
+- git clone https://github.com/lftrobusgauli/react-leaderboard-app
 - `npm install or yarn install`
 - `npm start`
 - `npm run test`
