@@ -15,7 +15,7 @@ A simple React application that displays a list of top players with highest scor
 ## Server Setup:
 
 ```shell
-git clone https://github.com/lftrobusgauli/gin-gql-api.gitv
+git clone https://github.com/lftrobusgauli/gin-gql-api.git
 run docker-compose build && docker-compose up
 ```
 
